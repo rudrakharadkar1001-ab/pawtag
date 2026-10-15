@@ -1,0 +1,15 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+# Every QR code opens /p/PV-XXXXXX  -> shows the dog ID page
+[[redirects]]
+  from = "/p/*"
+  to = "/pet.html"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

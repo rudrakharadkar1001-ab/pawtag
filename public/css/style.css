@@ -1,0 +1,29 @@
+:root{--bg:#EAF6FF;--bg2:#CDEBF7;--ink:#0B2A5B;--soft:#4a6a92;--primary:#1668C7;--pdark:#0B2A5B;--accent:#14B8A6;--card:#fff;--cardink:#0B2A5B;--line:rgba(11,42,91,.16);
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;--body:"Outfit",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+.paws{position:fixed;inset:0;pointer-events:none;z-index:0;color:var(--primary)}
+.paws i{position:absolute;display:block}
+.paws svg{width:100%;height:100%}
+main,header.top,footer{position:relative;z-index:1}
+.wrap{width:min(720px,100%);margin:0 auto;padding:0 20px}
+.top{display:flex;align-items:center;justify-content:center;gap:12px;padding:16px 20px 4px}
+.top img{width:58px;height:58px;border-radius:50%;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.top b{font-family:var(--display);font-size:1.5rem;letter-spacing:.02em}
+.top small{display:block;font-size:.78rem;color:var(--soft);margin-top:-4px}
+h1,h2{font-family:var(--display);line-height:1.08}
+h2{font-size:clamp(1.8rem,6vw,2.4rem);font-weight:800;margin-bottom:6px}
+.sec{padding:46px 0 10px}
+.lead{color:var(--soft)}
+.card{background:var(--card);color:var(--cardink);border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:0 18px 40px -22px rgba(0,0,0,.35)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;text-decoration:none;font-weight:700;border-radius:18px;padding:16px 22px;font-size:1.05rem;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-main{background:linear-gradient(135deg,var(--primary),var(--pdark));color:#fff;box-shadow:0 12px 26px -10px var(--primary)}
+.btn-line{background:transparent;border:2px solid var(--primary);color:var(--primary)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+footer{padding:50px 20px 120px;text-align:center;color:var(--soft)}
+footer img{width:84px;height:84px;margin:0 auto 10px;border-radius:50%;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
